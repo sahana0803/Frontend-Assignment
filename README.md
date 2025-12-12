@@ -2,6 +2,8 @@
 
 A beautiful, interactive quiz application built with HTML, CSS, and JavaScript, matching the Figma prototype design.
 
+🌐 **Live Demo:** [https://poetic-nougat-43c1a9.netlify.app](https://poetic-nougat-43c1a9.netlify.app)
+
 ## 📋 Table of Contents
 
 - [Tech Stack](#tech-stack)
