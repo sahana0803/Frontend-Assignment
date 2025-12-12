@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Knowledge - Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;600&family=Caveat+Brush&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-card-wrapper">
+            <div class="quiz-card">
+            <!-- Quiz Title -->
+            <h1 class="quiz-title">Test Your Knowledge</h1>
+            <p class="quiz-subtitle">Answer all questions to see your results</p>
+            
+            <!-- Progress Indicator -->
+            <div class="progress-indicator" id="progressIndicator"></div>
+            
+            <!-- Question Container -->
+            <div class="question-container" id="questionContainer">
+                <div class="question-box">
+                    <p class="question-text" id="questionText"></p>
+                </div>
+                
+                <!-- Answer Options -->
+                <div class="answers-container" id="answersContainer"></div>
+                
+                <!-- Navigation Buttons -->
+                <div class="navigation-container">
+                    <button class="nav-button prev-button" id="prevButton" onclick="previousQuestion()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="nav-button next-button" id="nextButton" onclick="nextQuestion()">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="submit-button" id="submitButton" onclick="submitQuiz()" style="display: none;">Submit</button>
+                </div>
+            </div>
+            
+            <!-- Decorative Elements -->
+            <div class="decorative-elements">
+                <div class="speech-bubble" id="speechBubble">
+                    <img src="images/best-of-luck.png" alt="Best of Luck" class="speech-bubble-image">
+                </div>
+                <div class="cat-paw-gif" id="catPawGif">
+                    <img src="images/main-image.gif" alt="Cat Paw" class="cat-paw-image">
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Results Page (Hidden Initially) -->
+    <div class="results-container" id="resultsContainer" style="display: none;">
+        <div class="results-card">
+            <div class="keep-learning-box">
+                <p>Keep Learning!</p>
+            </div>
+            <h2 class="final-score-label">Your Final score is</h2>
+            <div class="score-display">
+                <span class="score-number" id="scoreNumber">0</span>
+                <span class="score-percent">%</span>
+            </div>
+            <button class="start-again-button" onclick="startAgain()">Start Again</button>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
