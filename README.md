@@ -232,4 +232,3 @@ const quizQuestions = [
 ---
 
 **Note**: This is a front-end only application with no backend dependencies. All functionality is implemented using vanilla JavaScript, HTML, and CSS.
-
